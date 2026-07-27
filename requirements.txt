@@ -1,0 +1,7 @@
+torch
+monai
+dipy
+einops
+matplotlib
+nibabel
+opencv-python
