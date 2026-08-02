@@ -93,3 +93,29 @@ for epoch in range(NUM_EPOCHS):
     # STEP 7: PRINT REPORT
     # =========================================================================
     print(f"Epoch [{epoch+1:03d}] ... Complete Metrics Log Output Line")
+
+
+
+    ==============================================================================
+    CUDA SET-UP: GPU
+    ==============================================================================
+    # Deactivate current env
+deactivate
+
+# Delete old environment
+Remove-Item -Recurse -Force .\ivimvnv
+
+# Create new environment
+python -m venv ivimvnv
+
+# Activate it
+.\ivimvnv\Scripts\Activate.ps1
+
+# Install CUDA PyTorch
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+
+# Test
+python -c "import torch; print(torch.cuda.is_available())"
+
+
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
