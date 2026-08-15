@@ -119,3 +119,11 @@ python -c "import torch; print(torch.cuda.is_available())"
 
 
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+
+
+
+==========================================
+If You want to fetch remote file and ignore local changes completely
+git fetch
+git reset --hard origin/main
+==========================================
