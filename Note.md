@@ -146,5 +146,8 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details
 **************************************************************************
                       SOLUTION
 **************************************************************************
-git fetch
-git 
+git fetch origin
+git add .
+git commit -m""
+git push --force origin "branch name"
+====================================================================
