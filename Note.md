@@ -127,3 +127,24 @@ If You want to fetch remote file and ignore local changes completely
 git fetch
 git reset --hard origin/main
 ==========================================
+
+==========================================
+If remote file already has some changes in remote repo and you also made 
+some changes in the same file on your local machine and wants to push that file into same repo.
+ 
+ *************************************************************************
+                         ERROR 
+ *************************************************************************
+ To https://github.com/Saroj94/IVIM_Autoencoder.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Saroj94/IVIM_Autoencoder.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details
+**************************************************************************
+                      SOLUTION
+**************************************************************************
+git fetch
+git 
